@@ -13,7 +13,7 @@ const mongodb = "mongodb+srv://sureshvdm02:sureshvdm@cluster0.hiamz3a.mongodb.ne
 app.get('/', (req, res) => {
     res.send('Welcome to smart server')
 })
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 8080;
 // mongoose.connect(mongodb, { useUnifiedTopology: true, useNewUrlParser: true }).then(() => {
 //     app.listen(3000);
 //     console.log(`server is running on port 3000`)
@@ -25,4 +25,4 @@ const PORT = process.env.PORT || 8000;
 
 //deploy server
 mongoose.connect(process.env.MDB, { useUnifiedTopology: true, useNewUrlParser: true}).then(() => {
-    app.listen(8000,console.log(`server is running on port ${PORT}`))}).catch(err => console.log(err))
+    app.listen(8080,console.log(`server is running on port ${PORT}`))}).catch(err => console.log(err))
