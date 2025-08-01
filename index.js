@@ -20,9 +20,9 @@ const PORT = process.env.PORT || 8080;
 // }).catch(err => console.log(err))
 // const PORT = process.env.PORT || 5000;
 
-// mongoose.connect(mongodb, { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false}).then(() => {
-//     app.listen(5000,console.log(`server is running on port ${PORT}`))}).catch(err => console.log(err))
+mongoose.connect(mongodb, { useUnifiedTopology: true, useNewUrlParser: true, useFindAndModify: false}).then(() => {
+    app.listen(5000,console.log(`server is running on port ${PORT}`))}).catch(err => console.log(err))
 
 //deploy server
-mongoose.connect(process.env.MDB, { useUnifiedTopology: true, useNewUrlParser: true}).then(() => {
-    app.listen(8080,console.log(`server is running on port ${PORT}`))}).catch(err => console.log(err))
+// mongoose.connect(process.env.MDB, { useUnifiedTopology: true, useNewUrlParser: true}).then(() => {
+//     app.listen(8080,console.log(`server is running on port ${PORT}`))}).catch(err => console.log(err))
